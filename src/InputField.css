@@ -1,0 +1,16 @@
+.Input-field {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    outline:none;
+    width:180px;
+    height: 30px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.Inputfield-container {
+    margin-left: 9%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
