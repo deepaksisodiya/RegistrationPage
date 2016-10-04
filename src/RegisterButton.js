@@ -4,8 +4,8 @@
 
 
 import React, { Component } from 'react';
-import './RegisterButton.css';
 
+import './RegisterButton.css';
 import rejexObj from './utils';
 
 export default class RegisterButton extends Component {
@@ -19,8 +19,6 @@ export default class RegisterButton extends Component {
         isFormHaveValues = false;
       }
     }
-    console.log(isFormHaveValues);
-
     if(isFormHaveValues) {
       let isValidForm = true;
       for (let obj in rejexObj) {
@@ -37,8 +35,6 @@ export default class RegisterButton extends Component {
     } else {
       alert('Please fill the form');
     }
-
-
   };
 
   render() {

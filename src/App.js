@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
-
-import InputField from './InputField';
-
 import UserIcon from 'react-icons/lib/fa/user';
 import EmailIcon from 'react-icons/lib/fa/envelope-o';
 import PasswordIcon from 'react-icons/lib/fa/lock';
 
+import './App.css';
+import InputField from './InputField';
 import RegisterButton from './RegisterButton';
 
-class App extends Component {
+export default class App extends Component {
 
   componentDidMount() {
     document.body.style.backgroundColor = '#00BCD5';
@@ -30,6 +28,5 @@ class App extends Component {
       </div>
     );
   }
+  
 }
-
-export default App;

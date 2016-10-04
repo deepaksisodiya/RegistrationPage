@@ -4,10 +4,9 @@
 
 
 import React, { Component } from 'react';
+
 import './InputField.css';
-
 import rejexObj from './utils';
-
 
 export default class InputField extends Component {
 
@@ -69,6 +68,5 @@ export default class InputField extends Component {
       </div>
     )
   }
-
-
+  
 }
