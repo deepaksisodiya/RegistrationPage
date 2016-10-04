@@ -5,15 +5,21 @@
 export default {
   username: {
     rejex: /^(?=.*[A-Z])[0-9a-zA-Z]+$/,
-    error: 'Invalid Username'
+    error: 'Invalid Username',
+    isValid:false,
   },
   email: {
     rejex: /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm,
-    error: 'Invalid Email'
+    error: 'Invalid Email',
+    isValid: false,
   },
   password: {
     rejex: /^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9_]{5,10}$/,
-    error: 'Invalid Password'
+    error: 'Invalid Password',
+    isValid: false
+  },
+  reEnterPassword: {
+    isValid: false
   }
 }
 

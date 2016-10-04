@@ -21,24 +21,31 @@ export default class InputField extends Component {
 
   _onBlur = (e) => {
     let value = e.target.value;
-    if(this.props.name === 'reEnterPassword') {
-      let isValid = rejexObj['password'].rejex.test(value);
-      if(isValid) {
-        let passwordValue = document.getElementById('password').value;
-        if(passwordValue !== value) {
-          this._setState(true, 'Password not matching');
+    if(value) {
+      if(this.props.name === 'reEnterPassword') {
+        rejexObj[this.props.name].value = value;
+        let isValid = rejexObj['password'].rejex.test(value);
+        if(isValid) {
+          let passwordValue = document.getElementById('password').value;
+          if(passwordValue !== value) {
+            rejexObj[this.props.name].isValid = false;
+            this._setState(true, 'Password not matching');
+          } else {
+            rejexObj[this.props.name].isValid = true;
+            this._setState(false, '');
+          }
         } else {
-          this._setState(false, '');
+          rejexObj[this.props.name].isValid = false;
+          this._setState(true, rejexObj['password'].error);
         }
       } else {
-        this._setState(true, rejexObj['password'].error);
-      }
-    } else {
-      if(value) {
+        rejexObj[this.props.name].value = value;
         let isValid = rejexObj[this.props.name].rejex.test(value);
         if(isValid) {
+          rejexObj[this.props.name].isValid = true;
           this._setState(false, '');
         } else {
+          rejexObj[this.props.name].isValid = false;
           this._setState(true, rejexObj[this.props.name].error);
         }
       }
