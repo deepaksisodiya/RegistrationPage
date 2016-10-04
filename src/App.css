@@ -7,8 +7,8 @@
 .Register-container {
     color: black;
     background-color: #FFFFFF;
-    width: 22%;
-    height: 365px;
+    width: 20%;
+    height: 398px;
     border-radius: 4px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -16,12 +16,14 @@
 .Header {
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 18px;
 }
 
 .Header-tag {
     text-align: center;
-    padding: 10px;
+    padding: 9px;
+    font-size: 14px;
 }
 
 @keyframes App-logo-spin {
