@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 
 import './RegisterButton.css';
-import rejexObj from './utils';
+import rejexObj from '../../utils';
 
 export default class RegisterButton extends Component {
 

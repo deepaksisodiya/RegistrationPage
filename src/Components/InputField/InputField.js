@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 
 import './InputField.css';
-import rejexObj from './utils';
+import rejexObj from '../../utils';
 
 export default class InputField extends Component {
 

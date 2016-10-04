@@ -4,8 +4,8 @@ import EmailIcon from 'react-icons/lib/fa/envelope-o';
 import PasswordIcon from 'react-icons/lib/fa/lock';
 
 import './App.css';
-import InputField from './InputField';
-import RegisterButton from './RegisterButton';
+import InputField from './Components/InputField/InputField';
+import RegisterButton from './Components/RegisterButton/RegisterButton';
 
 export default class App extends Component {
 
