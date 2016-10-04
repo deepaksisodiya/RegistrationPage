@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import InputField from './InputField';
+
+import UserIcon from 'react-icons/lib/fa/user';
+import EmailIcon from 'react-icons/lib/fa/envelope-o';
+import PasswordIcon from 'react-icons/lib/fa/lock';
+
 class App extends Component {
+
+  componentDidMount() {
+    document.body.style.backgroundColor = '#00BCD5';
+  }
+
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div className="Register-container">
+          <div className="Header">Register</div>
+          <div className="Header-tag">Join our community now!</div>
+          <InputField type="text" placeholder="Username" icon={UserIcon}/>
+          <InputField type="email" placeholder="Email" icon={EmailIcon}/>
+          <InputField type="password" placeholder="Password" icon={PasswordIcon}/>
+          <InputField type="password" placeholder="Password again" icon={PasswordIcon}/>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
