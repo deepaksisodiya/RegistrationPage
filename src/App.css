@@ -8,11 +8,8 @@
     color: black;
     background-color: #FFFFFF;
     width: 22%;
-    height: 400px;
+    height: 365px;
     border-radius: 4px;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
 }
 
 .Header {
