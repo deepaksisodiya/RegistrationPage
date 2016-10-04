@@ -21,10 +21,10 @@ class App extends Component {
         <div className="Register-container">
           <div className="Header">Register</div>
           <div className="Header-tag">Join our community now!</div>
-          <InputField type="text" placeholder="Username" icon={UserIcon}/>
-          <InputField type="email" placeholder="Email" icon={EmailIcon}/>
-          <InputField type="password" placeholder="Password" icon={PasswordIcon}/>
-          <InputField type="password" placeholder="Password again" icon={PasswordIcon}/>
+          <InputField type="text" placeholder="Username" icon={UserIcon} name="username"/>
+          <InputField type="email" placeholder="Email" icon={EmailIcon} name="email"/>
+          <InputField type="password" placeholder="Password" icon={PasswordIcon} name="password"/>
+          <InputField type="password" placeholder="Password again" icon={PasswordIcon} name="reEnterPassword"/>
           <RegisterButton />
         </div>
       </div>
