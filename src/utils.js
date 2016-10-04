@@ -9,7 +9,7 @@ export default {
     isValid:false,
   },
   email: {
-    rejex: /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm,
+    rejex: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
     error: 'Invalid Email',
     isValid: false,
   },
